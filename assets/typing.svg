@@ -1,0 +1,65 @@
+<!-- https://github.com/DenverCoder1/readme-typing-svg/ -->
+<svg xmlns='http://www.w3.org/2000/svg'
+    xmlns:xlink='http://www.w3.org/1999/xlink'
+    viewBox='0 0 900 120'
+    style='background-color: #00000000;'
+    width='900px' height='120px'>
+
+    
+                <path id='path0'>
+                            <!-- Multiline -->
+                                <animate id='d0' attributeName='d' begin='0s;d3.end'
+                    dur='2600ms' fill="freeze"
+                    values='m0,33 h0 ; m0,33 h0 ; m0,33 h900 ; m0,33 h900' keyTimes='0;0;0.76923076923077;1' />
+                    </path>
+    <text font-family='"Fira Code", monospace' fill='#36BCF7' font-size='28'
+        dominant-baseline='middle'
+        x='50%' text-anchor='middle'
+        letter-spacing='normal'>
+        <textPath xlink:href='#path0'>
+            Welcome to my corner of GitHub
+        </textPath>
+    </text>
+        <path id='path1'>
+                            <!-- Multiline -->
+                                <animate id='d1' attributeName='d' begin='0s;d3.end'
+                    dur='5200ms' fill="freeze"
+                    values='m0,66 h0 ; m0,66 h0 ; m0,66 h900 ; m0,66 h900' keyTimes='0;0.5;0.88461538461538;1' />
+                    </path>
+    <text font-family='"Fira Code", monospace' fill='#36BCF7' font-size='28'
+        dominant-baseline='middle'
+        x='50%' text-anchor='middle'
+        letter-spacing='normal'>
+        <textPath xlink:href='#path1'>
+            I turn raw data into real insights
+        </textPath>
+    </text>
+        <path id='path2'>
+                            <!-- Multiline -->
+                                <animate id='d2' attributeName='d' begin='0s;d3.end'
+                    dur='7800ms' fill="freeze"
+                    values='m0,99 h0 ; m0,99 h0 ; m0,99 h900 ; m0,99 h900' keyTimes='0;0.66666666666667;0.92307692307692;1' />
+                    </path>
+    <text font-family='"Fira Code", monospace' fill='#36BCF7' font-size='28'
+        dominant-baseline='middle'
+        x='50%' text-anchor='middle'
+        letter-spacing='normal'>
+        <textPath xlink:href='#path2'>
+            Python | Pandas | ML | EDA
+        </textPath>
+    </text>
+        <path id='path3'>
+                            <!-- Multiline -->
+                                <animate id='d3' attributeName='d' begin='0s;d3.end'
+                    dur='10400ms' fill="freeze"
+                    values='m0,132 h0 ; m0,132 h0 ; m0,132 h900 ; m0,132 h900' keyTimes='0;0.75;0.94230769230769;1' />
+                    </path>
+    <text font-family='"Fira Code", monospace' fill='#36BCF7' font-size='28'
+        dominant-baseline='middle'
+        x='50%' text-anchor='middle'
+        letter-spacing='normal'>
+        <textPath xlink:href='#path3'>
+            Currently Open To Opportunities
+        </textPath>
+    </text>
+</svg>
