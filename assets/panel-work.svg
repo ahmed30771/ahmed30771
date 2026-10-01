@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="460" viewBox="0 0 900 460">
+  <defs>
+    <linearGradient id="wbg" x1="0" y1="0" x2="900" y2="460" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A0E13"/>
+      <stop offset="100%" stop-color="#0B1A16"/>
+    </linearGradient>
+    <pattern id="wgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 H0 V40" fill="none" stroke="#1A2430" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="460" fill="url(#wbg)"/>
+  <rect width="900" height="460" fill="url(#wgrid)" opacity="0.45"/>
+
+  <rect x="48" y="28" width="40" height="2" fill="#3DDC97"/>
+  <text x="48" y="64" fill="#F2F5F7" font-family="Georgia, Times New Roman, serif" font-size="28">Selected work</text>
+  <text x="250" y="64" fill="#6B7A88" font-family="Consolas, Monaco, monospace" font-size="13" letter-spacing="1">ML PIPELINES / ANALYSIS</text>
+
+  <!-- card 1 -->
+  <rect x="48" y="100" width="390" height="150" rx="8" fill="#0C1117" stroke="#1E2A36" stroke-width="1"/>
+  <text x="72" y="138" fill="#3DDC97" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="600">stock-ml-pipeline-linear-regression</text>
+  <text x="72" y="168" fill="#C8D0D8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">End-to-end ML pipeline for next-day PSX</text>
+  <text x="72" y="188" fill="#C8D0D8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">stock prices using Linear Regression.</text>
+  <circle cx="80" cy="220" r="5" fill="#DA5B0B"/>
+  <text x="92" y="224" fill="#A8B4C0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12">Jupyter Notebook</text>
+
+  <!-- card 2 -->
+  <rect x="462" y="100" width="390" height="150" rx="8" fill="#0C1117" stroke="#1E2A36" stroke-width="1"/>
+  <text x="486" y="138" fill="#3DDC97" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="600">telecom-churn-eda-logistic-pipeline</text>
+  <text x="486" y="168" fill="#C8D0D8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">Telecom churn prediction with EDA and</text>
+  <text x="486" y="188" fill="#C8D0D8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">full Logistic Regression ML pipeline.</text>
+  <circle cx="494" cy="220" r="5" fill="#DA5B0B"/>
+  <text x="506" y="224" fill="#A8B4C0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12">Jupyter Notebook</text>
+
+  <!-- card 3 -->
+  <rect x="48" y="270" width="390" height="150" rx="8" fill="#0C1117" stroke="#1E2A36" stroke-width="1"/>
+  <text x="72" y="308" fill="#3DDC97" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="600">tips-restaurant-sales-insights-python</text>
+  <text x="72" y="338" fill="#C8D0D8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">Restaurant sales analysis with Python</text>
+  <text x="72" y="358" fill="#C8D0D8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">cleaning, EDA, and business insights.</text>
+  <circle cx="80" cy="390" r="5" fill="#DA5B0B"/>
+  <text x="92" y="394" fill="#A8B4C0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12">Jupyter Notebook</text>
+
+  <!-- card 4 -->
+  <rect x="462" y="270" width="390" height="150" rx="8" fill="#0C1117" stroke="#1E2A36" stroke-width="1"/>
+  <text x="486" y="308" fill="#3DDC97" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="600">cv_evaluation</text>
+  <text x="486" y="338" fill="#C8D0D8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">CV evaluation tooling for structured</text>
+  <text x="486" y="358" fill="#C8D0D8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">assessment workflows.</text>
+  <circle cx="494" cy="390" r="5" fill="#3178c6"/>
+  <text x="506" y="394" fill="#A8B4C0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12">TypeScript</text>
+</svg>

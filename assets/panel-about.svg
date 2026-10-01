@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" preserveAspectRatio="xMidYMid meet" role="img">
+  <title>About</title>
+  <defs>
+    <linearGradient id="abg" x1="0" y1="0" x2="900" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A0E13"/>
+      <stop offset="100%" stop-color="#0B1A16"/>
+    </linearGradient>
+    <pattern id="agrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 H0 V40" fill="none" stroke="#1A2430" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="220" fill="url(#abg)"/>
+  <rect width="900" height="220" fill="url(#agrid)" opacity="0.45"/>
+  <rect x="48" y="36" width="40" height="2" fill="#3DDC97"/>
+  <text x="48" y="72" fill="#F2F5F7" font-family="Georgia, Times New Roman, serif" font-size="28">About</text>
+  <text x="48" y="112" fill="#C8D0D8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16">I build Python-first machine learning systems from exploratory analysis</text>
+  <text x="48" y="136" fill="#C8D0D8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16">to end-to-end pipelines that are clear, testable, and ready to ship.</text>
+  <text x="48" y="172" fill="#8A97A5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15">Currently deepening Deep Learning, MLOps, and advanced SQL with a focus</text>
+  <text x="48" y="196" fill="#8A97A5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15">on reliable training, evaluation, and deployment loops.</text>
+</svg>

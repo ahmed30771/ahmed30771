@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="24" viewBox="0 0 900 24" preserveAspectRatio="xMidYMid meet" role="img">
+  <title>divider</title>
+  <line x1="0" y1="12" x2="900" y2="12" stroke="#1E2A36" stroke-width="1"/>
+  <rect x="430" y="10" width="40" height="4" rx="1" fill="#3DDC97"/>
+</svg>

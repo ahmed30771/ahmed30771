@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="120" viewBox="0 0 900 120" preserveAspectRatio="xMidYMid meet" role="img">
+  <title>Thanks for visiting</title>
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="900" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A0E13"/>
+      <stop offset="100%" stop-color="#0B1A16"/>
+    </linearGradient>
+    <pattern id="fgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 H0 V40" fill="none" stroke="#1A2430" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="120" fill="url(#fbg)"/>
+  <rect width="900" height="120" fill="url(#fgrid)" opacity="0.4"/>
+
+  <rect x="48" y="34" width="40" height="2" fill="#3DDC97"/>
+  <text x="48" y="68" fill="#F2F5F7" font-family="Georgia, Times New Roman, serif" font-size="26">Thanks for stopping by.</text>
+  <text x="48" y="94" fill="#6B7A88" font-family="Consolas, Monaco, monospace" font-size="13" letter-spacing="1">BUILD / LEARN / SHIP</text>
+</svg>

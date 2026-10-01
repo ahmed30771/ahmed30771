@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="110" viewBox="0 0 900 110" preserveAspectRatio="xMidYMid meet" role="img">
+  <title>Activity</title>
+  <defs>
+    <linearGradient id="actbg" x1="0" y1="0" x2="900" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A0E13"/>
+      <stop offset="100%" stop-color="#0B1A16"/>
+    </linearGradient>
+    <pattern id="actgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 H0 V40" fill="none" stroke="#1A2430" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="110" fill="url(#actbg)"/>
+  <rect width="900" height="110" fill="url(#actgrid)" opacity="0.45"/>
+  <rect x="48" y="28" width="40" height="2" fill="#3DDC97"/>
+  <text x="48" y="64" fill="#F2F5F7" font-family="Georgia, Times New Roman, serif" font-size="28">Activity</text>
+  <text x="48" y="90" fill="#6B7A88" font-family="Consolas, Monaco, monospace" font-size="13" letter-spacing="1">CONTRIBUTION PATH / LAST 52 WEEKS</text>
+</svg>

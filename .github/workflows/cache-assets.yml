@@ -1,0 +1,56 @@
+name: Cache Profile Assets
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  cache-assets:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create assets folder
+        run: mkdir -p assets
+
+      # Custom header / footer / divider live in the repo and are not overwritten.
+      # Only regenerate remote-dependent cards so the visual system stays consistent.
+
+      - name: Download GitHub stats cards
+        run: |
+          THEME="title_color=3DDC97&icon_color=3DDC97&text_color=C8D0D8&bg_color=0C1117&border_color=1E2A36"
+          curl -sL "https://github-readme-stats.vercel.app/api?username=ahmed30771&show_icons=true&${THEME}" -o assets/stats.svg
+          curl -sL "https://github-readme-stats.vercel.app/api/top-langs/?username=ahmed30771&layout=compact&${THEME}" -o assets/top-langs.svg
+
+      - name: Download streak stats
+        run: >
+          curl -sL "https://github-readme-streak-stats.herokuapp.com/?user=ahmed30771&background=0C1117&stroke=1E2A36&ring=3DDC97&fire=3DDC97&currStreakLabel=3DDC97&sideLabels=A8B4C0&currStreakNum=F2F5F7&sideNums=F2F5F7&dates=6B7A88&border=1E2A36"
+          -o assets/streak.svg
+
+      - name: Download repo pin cards
+        run: |
+          THEME="title_color=3DDC97&icon_color=3DDC97&text_color=C8D0D8&bg_color=0C1117&border_color=1E2A36"
+          curl -sL "https://github-readme-stats.vercel.app/api/pin/?username=ahmed30771&repo=stock-ml-pipeline-linear-regression&${THEME}" -o assets/pin-stock-ml.svg
+          curl -sL "https://github-readme-stats.vercel.app/api/pin/?username=ahmed30771&repo=telecom-churn-eda-logistic-pipeline&${THEME}" -o assets/pin-telecom-churn.svg
+          curl -sL "https://github-readme-stats.vercel.app/api/pin/?username=ahmed30771&repo=tips-restaurant-sales-insights-python&${THEME}" -o assets/pin-tips-restaurant.svg
+          curl -sL "https://github-readme-stats.vercel.app/api/pin/?username=ahmed30771&repo=cv_evaluation&${THEME}" -o assets/pin-cv-evaluation.svg
+
+      - name: Validate downloads
+        run: |
+          for f in assets/stats.svg assets/top-langs.svg assets/streak.svg assets/pin-stock-ml.svg assets/pin-telecom-churn.svg assets/pin-tips-restaurant.svg assets/pin-cv-evaluation.svg; do
+            if [ ! -s "$f" ]; then
+              echo "Warning: $f is empty, restoring previous version"
+              git checkout -- "$f" 2>/dev/null || rm -f "$f"
+            fi
+          done
+
+      - name: Commit updated assets
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: refresh profile assets [skip ci]"
+          file_pattern: "assets/*.svg"

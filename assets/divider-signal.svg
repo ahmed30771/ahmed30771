@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="64" viewBox="0 0 900 64">
+  <defs>
+    <linearGradient id="rail" x1="70" y1="32" x2="830" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3DDC97" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#3DDC97" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3DDC97" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="64" fill="#ffffff" fill-opacity="0.01"/>
+
+  <line x1="70" y1="32" x2="830" y2="32" stroke="url(#rail)" stroke-width="3"/>
+
+  <path d="M78 16 H62 V48 H78" fill="none" stroke="#3DDC97" stroke-width="3"/>
+  <path d="M822 16 H838 V48 H822" fill="none" stroke="#3DDC97" stroke-width="3"/>
+
+  <rect x="170" y="24" width="3" height="16" fill="#3DDC97"/>
+  <rect x="250" y="22" width="3" height="20" fill="#3DDC97"/>
+  <rect x="330" y="24" width="3" height="16" fill="#3DDC97"/>
+  <rect x="570" y="24" width="3" height="16" fill="#3DDC97"/>
+  <rect x="650" y="22" width="3" height="20" fill="#3DDC97"/>
+  <rect x="730" y="24" width="3" height="16" fill="#3DDC97"/>
+
+  <circle cx="450" cy="32" r="20" fill="none" stroke="#3DDC97" stroke-width="2"/>
+  <circle cx="450" cy="32" r="12" fill="none" stroke="#3DDC97" stroke-width="2"/>
+  <path d="M450 18 L463 32 L450 46 L437 32 Z" fill="none" stroke="#3DDC97" stroke-width="2.5"/>
+  <circle cx="450" cy="32" r="5" fill="#3DDC97"/>
+
+  <path d="M402 32 L414 24 L414 40 Z" fill="#3DDC97"/>
+  <path d="M498 32 L486 24 L486 40 Z" fill="#3DDC97"/>
+</svg>

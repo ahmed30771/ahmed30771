@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="280" viewBox="0 0 900 280" preserveAspectRatio="xMidYMid meet" role="img">
+  <title>Muhammad Ahmed - Python and Machine Learning Developer</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A0E13"/>
+      <stop offset="55%" stop-color="#0F1620"/>
+      <stop offset="100%" stop-color="#0B1A16"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="48" y1="0" x2="852" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3DDC97" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#3DDC97"/>
+      <stop offset="100%" stop-color="#3DDC97" stop-opacity="0.2"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 H0 V40" fill="none" stroke="#1A2430" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="280" fill="url(#bg)"/>
+  <rect width="900" height="280" fill="url(#grid)" opacity="0.55"/>
+
+  <circle cx="760" cy="120" r="90" fill="#3DDC97" opacity="0.07"/>
+  <circle cx="760" cy="120" r="48" fill="none" stroke="#3DDC97" stroke-opacity="0.28" stroke-width="1.5"/>
+  <circle cx="760" cy="120" r="8" fill="#3DDC97" opacity="0.9"/>
+
+  <rect x="48" y="36" width="64" height="2" fill="#3DDC97"/>
+  <text x="124" y="42" fill="#7A8A9A" font-family="Consolas, Monaco, monospace" font-size="12" letter-spacing="2.5">PROFILE / ML SYSTEMS</text>
+
+  <text x="48" y="118" fill="#F2F5F7" font-family="Georgia, Times New Roman, serif" font-size="52" font-weight="700">Muhammad Ahmed</text>
+  <text x="48" y="158" fill="#3DDC97" font-family="Consolas, Monaco, monospace" font-size="16" letter-spacing="1">@ahmed30771</text>
+
+  <text x="48" y="208" fill="#A8B4C0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18">Python and Machine Learning Developer</text>
+  <text x="48" y="236" fill="#6B7A88" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14">Turning raw data into reliable models and clear insights.</text>
+
+  <path d="M48 268 H852" stroke="url(#signal)" stroke-width="2" fill="none"/>
+</svg>
