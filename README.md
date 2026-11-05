@@ -49,8 +49,8 @@
     <img src="https://raw.githubusercontent.com/ahmed30771/ahmed30771/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Contribution snake"/>
   </picture>
   <br/>
-  <img height="165" src="https://raw.githubusercontent.com/ahmed30771/ahmed30771/main/assets/stats.svg" alt="GitHub stats"/>
-  <img height="165" src="https://raw.githubusercontent.com/ahmed30771/ahmed30771/main/assets/top-langs.svg" alt="Top languages"/>
+  <img height="195" width="495" src="https://cdn.jsdelivr.net/gh/ahmed30771/ahmed30771@main/assets/stats.svg" alt="GitHub stats"/>
+  <img height="165" width="350" src="https://cdn.jsdelivr.net/gh/ahmed30771/ahmed30771@main/assets/top-langs.svg" alt="Top languages"/>
   <br/>
   <img src="https://raw.githubusercontent.com/ahmed30771/ahmed30771/main/assets/streak.svg" alt="Contribution streak"/>
   <br/>

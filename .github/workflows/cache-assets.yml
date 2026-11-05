@@ -19,13 +19,14 @@ jobs:
         run: mkdir -p assets
 
       # Custom header / footer / divider live in the repo and are not overwritten.
-      # Only regenerate remote-dependent cards so the visual system stays consistent.
+      # github-readme-stats.vercel.app is often paused; use a public mirror.
 
       - name: Download GitHub stats cards
         run: |
+          BASE="https://github-readme-stats-one-bice.vercel.app"
           THEME="title_color=3DDC97&icon_color=3DDC97&text_color=C8D0D8&bg_color=0C1117&border_color=1E2A36"
-          curl -sL "https://github-readme-stats.vercel.app/api?username=ahmed30771&show_icons=true&${THEME}" -o assets/stats.svg
-          curl -sL "https://github-readme-stats.vercel.app/api/top-langs/?username=ahmed30771&layout=compact&${THEME}" -o assets/top-langs.svg
+          curl -sL "${BASE}/api?username=ahmed30771&show_icons=true&${THEME}" -o assets/stats.svg
+          curl -sL "${BASE}/api/top-langs/?username=ahmed30771&layout=compact&${THEME}" -o assets/top-langs.svg
 
       - name: Download streak stats
         run: >
@@ -34,17 +35,18 @@ jobs:
 
       - name: Download repo pin cards
         run: |
+          BASE="https://github-readme-stats-one-bice.vercel.app"
           THEME="title_color=3DDC97&icon_color=3DDC97&text_color=C8D0D8&bg_color=0C1117&border_color=1E2A36"
-          curl -sL "https://github-readme-stats.vercel.app/api/pin/?username=ahmed30771&repo=stock-ml-pipeline-linear-regression&${THEME}" -o assets/pin-stock-ml.svg
-          curl -sL "https://github-readme-stats.vercel.app/api/pin/?username=ahmed30771&repo=telecom-churn-eda-logistic-pipeline&${THEME}" -o assets/pin-telecom-churn.svg
-          curl -sL "https://github-readme-stats.vercel.app/api/pin/?username=ahmed30771&repo=tips-restaurant-sales-insights-python&${THEME}" -o assets/pin-tips-restaurant.svg
-          curl -sL "https://github-readme-stats.vercel.app/api/pin/?username=ahmed30771&repo=cv_evaluation&${THEME}" -o assets/pin-cv-evaluation.svg
+          curl -sL "${BASE}/api/pin/?username=ahmed30771&repo=stock-ml-pipeline-linear-regression&${THEME}" -o assets/pin-stock-ml.svg
+          curl -sL "${BASE}/api/pin/?username=ahmed30771&repo=telecom-churn-eda-logistic-pipeline&${THEME}" -o assets/pin-telecom-churn.svg
+          curl -sL "${BASE}/api/pin/?username=ahmed30771&repo=tips-restaurant-sales-insights-python&${THEME}" -o assets/pin-tips-restaurant.svg
+          curl -sL "${BASE}/api/pin/?username=ahmed30771&repo=cv_evaluation&${THEME}" -o assets/pin-cv-evaluation.svg
 
       - name: Validate downloads
         run: |
           for f in assets/stats.svg assets/top-langs.svg assets/streak.svg assets/pin-stock-ml.svg assets/pin-telecom-churn.svg assets/pin-tips-restaurant.svg assets/pin-cv-evaluation.svg; do
-            if [ ! -s "$f" ]; then
-              echo "Warning: $f is empty, restoring previous version"
+            if [ ! -s "$f" ] || ! grep -q "<svg" "$f" || grep -qiE "DEPLOYMENT_PAUSED|DEPLOYMENT_NOT_FOUND|FUNCTION_RUNTIME|Not Found" "$f"; then
+              echo "Warning: $f is missing/invalid SVG, restoring previous version"
               git checkout -- "$f" 2>/dev/null || rm -f "$f"
             fi
           done
